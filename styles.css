@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-    background-color: rgb(177, 166, 137);
+    background-color: rgb(102, 95, 80);
 }
 
 .container{
@@ -41,6 +41,31 @@ a{
     color: white;
 }
 
-.footer{
-    background-color: chartreuse;
+.body{
+    background: rgb(43, 31, 49);
 }
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+.footer{
+    background-color: rgb(17, 17, 56);
+}
+
+.authors{
+    width: 400px;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+}
+
+.dima{text-align: left;}
+.arsen{text-align: center;}
+.igor{text-align: right;}
