@@ -1,0 +1,18 @@
+body
+{
+  /* background-image: url("https://wallpapercave.com/wp/wp7250161.png");
+   background-color: black;*/
+   background-image: url("https://wallpaperaccess.com/full/383133.jpg");
+   background-size:cover;
+    margin: auto;
+    width: 1000px;
+    color: bisque;
+    background-attachment: fixed;
+}
+
+h2
+{
+    margin-left: 350px; 
+    color: red;
+}
+
