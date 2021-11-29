@@ -1,7 +1,5 @@
 body
 {
-  /* background-image: url("https://wallpapercave.com/wp/wp7250161.png");
-   background-color: black;*/
    background-image: url("https://wallpaperaccess.com/full/383133.jpg");
    background-size:cover;
     margin: auto;
@@ -12,7 +10,22 @@ body
 
 h2
 {
-    margin-left: 350px; 
-    color: red;
+    margin-left: 350px;
+    color:darkturquoise;
 }
-
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color:aqua;
+    border-radius: 30px;
+    bottom: 40px;
+    right: 50px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/25/25223.png");
+    background-size:50px 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+  }
