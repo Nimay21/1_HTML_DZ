@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(102, 95, 80);
+}
+
+.container{
+    width: 1200px;
+    
+    margin: auto;
+}
+
+.menu_top{
+    background-color: rgb(51, 51, 51);
+}
+
+.logo{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.menu_bottom{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.menu_bottom a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+.body{
+    background: rgb(43, 31, 49);
+    padding: 10px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content_menu{
+    padding: 10px;
+    border: 2px solid black;
+    background: rgb(81, 58, 92);
+    font-size: 20px;
+    border-radius: 15px;
+}
+.nav{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+img{
+    border-radius: 15px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+.next{
+    text-align: center;
+    color: white;
+    
+}
+.next a{
+    border:2px solid black;
+    border-radius: 10px;
+    background: rgb(81, 58, 92);
+    padding: 8px;
+}
+
+
+
+
+
+.footer{
+    background-color: rgb(17, 17, 56);
+}
+
+.authors{
+    width: 400px;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+}
+
+.dima{text-align: left;}
+.arsen{text-align: center;}
+.igor{text-align: right;}
