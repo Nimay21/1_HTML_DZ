@@ -10,8 +10,16 @@
 </head>
 <body>
     <div class="Proga">
-        <h3>Данная программа может быть реализована всего в одну строку</h3>
-        <pre><code class="language-clike">print("Hello World!")</code></pre>
+        <h3>Вычисление факториала числа 10 (10!):</h3>
+        <pre><code class="language-clike">def factorial(n):
+            if n < 0:
+                raise ArithmeticError('Факториал отрицательного числа.')
+            f = 1
+            for i in range (2, n + 1):
+                f *= i
+            return f
+        
+        print(factorial(10)) # 3628800</code></pre>
         <h1><a href="Python_info.html">Обратно</a></h1>
     </div>
     <script src="prism.js"></script>

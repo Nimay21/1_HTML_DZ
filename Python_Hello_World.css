@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(102, 95, 80);
+    margin: 25px;
+}
+a{
+    color:#DCCCC2;
+    text-decoration: none;
+    margin: 20px 0px;
+}
+h3{
+    margin: 25px 0px;
+    font-size: 25px;
+    color: #FFE5A2;
+}
