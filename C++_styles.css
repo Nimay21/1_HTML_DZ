@@ -111,12 +111,11 @@ h2{
 
 
 
-
 .next{
-    text-align: center; 
+    text-align: center;
     color: white;
-    
 }
+
 .next_b{
     border: 2px solid rgb(184, 134, 207);
     border-radius: 10px;
@@ -130,7 +129,7 @@ h2{
     background: rgb(218, 216, 100);
     padding: 8px;
     box-shadow: 0px 3px  black;
-    top: 6px;
+    transform: translateY(4px);
     transition: all 0.5s ;
 }
 
@@ -154,3 +153,8 @@ h2{
 .dima{text-align: left;}
 .arsen{text-align: center;}
 .igor{text-align: right;}
+
+
+a:hover{
+    transform: scale(110%);
+}

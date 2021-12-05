@@ -79,3 +79,7 @@ p
     margin-left: 20px;
     color:blanchedalmond;
 }
+
+a:hover{
+    transform: scale(110%);
+}
