@@ -107,17 +107,23 @@ h2{
 
 .history_img{
     height: 200px;
-    border-radius: 50px;
+    margin-top: 25px;
 }
 
 .philosofi_img{
     height: 200px;
-    border-radius: 50px;
     margin-right: 30px;
+    margin-top: 25px;
+}
+
+.difference_img{
+    margin-top: 25px;
+    height: 200px;
 }
 
 .develop_img{
     height: 200px;
+    margin-top: 25px;
     margin-right: 30px;
 }
 
@@ -126,6 +132,10 @@ h2{
     color: white;
     margin: 20px;
     text-align: center;
+}
+.text_info{
+    color: white;
+    margin: 20px;
 }
 
 
