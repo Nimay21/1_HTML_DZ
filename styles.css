@@ -82,4 +82,5 @@ p
 
 a:hover{
     transform: scale(110%);
+    color: rgb(255, 219, 166);
 }

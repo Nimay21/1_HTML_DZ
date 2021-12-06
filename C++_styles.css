@@ -81,6 +81,18 @@ img{
     border-radius: 15px;
 }
 
+.scrin{
+    display: block;
+    width: 1000px;
+    border: 2px solid white;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
 h2{
     text-align: center;
     color: white;
@@ -109,6 +121,12 @@ h2{
     margin-right: 30px;
 }
 
+
+.text{
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
 
 
 .next{
@@ -157,4 +175,5 @@ h2{
 
 a:hover{
     transform: scale(110%);
+    color: rgb(255, 219, 166);
 }
