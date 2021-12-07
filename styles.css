@@ -79,8 +79,9 @@ p
     margin-left: 20px;
     color:blanchedalmond;
 }
+HEAD
 .list_language
 {
 display: flex;
 justify-content: space-evenly;
-}
+
