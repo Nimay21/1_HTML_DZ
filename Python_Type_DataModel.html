@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Python_Info.css">
+    <link href="prism.css" rel="stylesheet" />
+    <title>index</title>
+</head>
+<body>
+    <table>
+        <td class="LeftColumn">
+            <div class="LeftContentPanel">
+                <div class="LeftContentPanelHeading"><h3>Содержание</h3></div>
+                <div>
+                    <ul class="list" id="list">
+                        <li> <a class="LeftPanelLink" href="Python_info.html">Описание</a></li>
+                        <li>Типы и модель данных
+                            <ul>
+                                <li> <a class="LeftPanelLink" href="Python_Type_Info.html">Типизация в программировании</a></li>
+                                <li><a class="LeftPanelLink" href="Python_Type.html">Типы данных в Python</a></li>
+                                <li><a class="LeftPanelLink" href="Python_Type_DataModel.html">Модель данных</a></li>
+                                <li><a class="LeftPanelLink" href="Python_Type_ChangeOrNoChange.html">Изменяемые и неизменяемые типы данных</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </td>
+        <td class="MainColumn">
+            <div class="container">
+                <div class="menu">
+                    <div class="menu_top">
+                        <div class="logo">LOGO</div>
+                    </div>
+                    <div class="menu_bottom">
+                        <a href="index.html">Главная</a>
+                        <a href="C++_info.html">C++</a>
+                        <a href="Java_info.html">Java</a>
+                        <a href="Python_info.html">Python</a>
+                        <a href="#footer">Авторы</a></li>
+                    </div>
+                </div>
+                <div class="Main">
+                    <h3><a name="Comparison"></a>Модель данных</h3>
+                    <p>Рассмотрим как создаются объекты в памяти, их устройство, процесс объявления новых переменных и работу операции присваивания.</p>
+                    <br><br>
+                    <p>Для того, чтобы объявить и сразу инициализировать переменную необходимо написать её имя, потом поставить знак равенства и значение, с которым эта переменная будет создана. Например строка:</p>
+                    <pre><code class="language-clike">b = 5</code></pre>
+                    <p>объявляет переменную b и присваивает ей значение 5.</p>
+                    <br><br>
+                    <p>Целочисленное значение 5 в рамках языка Python по сути своей является объектом. Объект, в данном случае – это абстракция для представления данных, данные – это числа, списки, строки и т.п. При этом, под данными следует понимать как непосредственно сами объекты, так и отношения между ними (об этом чуть позже). Каждый объект имеет три атрибута – это идентификатор, значение и тип. Идентификатор – это уникальный признак объекта, позволяющий отличать объекты друг от друга, а значение – непосредственно информация, хранящаяся в памяти, которой управляет интерпретатор.</p>
+                    <br><br>
+                    <p>При инициализации переменной, на уровне интерпретатора, происходит следующее:</p>
+                    <ul>
+                        <li><p>создается целочисленный объект 5 (можно представить, что в этот момент создается ячейка и 5 кладется в эту ячейку);</p></li>
+                        <li><p>данный объект имеет некоторый идентификатор, значение: 5, и тип: целое число;</p></li>
+                        <li><p>посредством оператора “=” создается ссылка между переменной b и целочисленным объектом 5 (переменная b ссылается на объект 5).</p></li>
+                    </ul>
+                    <br><br>
+                    <p>Имя переменной не должно совпадать с ключевыми словами интерпретатора Python. Список ключевых слов можно получить непосредственно в программе, для этого нужно подключить модуль keyword и воспользоваться командой keyword.kwlist.</p>
+                    <pre><code class="language-clike">>>> import keyword
+>>> print("Python keywords: ", keyword.kwlist)</code></pre>
+                    <br>
+                    <p>Проверить является или нет идентификатор ключевым словом можно так:</p>
+                    <pre><code class="language-clike">>>> keyword.iskeyword("try")
+True
+>>> keyword.iskeyword("b")
+False</code></pre>
+                    <br>
+                    <p>Для того, чтобы посмотреть на объект с каким идентификатором ссылается данная переменная, можно использовать функцию id().</p>
+                    <pre><code class="language-clike">>>> a = 4
+>>> b = 5
+>>> id(a)
+1829984576
+>>> id(b)
+1829984592
+>>> a = b
+>>> id(a)
+1829984592</code></pre>
+                    <br>
+                    <p>Как видно из примера, идентификатор – это некоторое целочисленное значение, посредством которого уникально адресуется объект. Изначально переменная a ссылается на объект 4 с идентификатором 1829984576, переменная b – на объект с id = 1829984592. После выполнения операции присваивания a = b, переменная a стала ссылаться на тот же объект, что и b.</p>
+                    <br>
+                    <img src="https://devpractice.ru/wp-content/uploads/2016/12/tpython-lesson3-1-1.png" alt="">
+                    <br>
+                    <p>Тип переменной можно определить с помощью функции type(). Пример использования приведен ниже.</p>
+                    <pre><code class="language-clike">>>> a = 10
+>>> b = "hello"
+>>> c = (1, 2)
+>>> type(a)
+'int'
+>>> type(b)
+'str'
+>>> type(c)
+'tuple'</code></pre>
+                </div>
+                <div class="footer">
+                    <a name = "footer"></a>
+                    <div class = "authors">
+                        <div class="dima">Гарнага Дима</div>
+                        <div class="arsen">Хубян Арсен</div>
+                        <div class="igor">Данчук Игорь</div>
+                </div>
+            </div>
+        </td>
+        <td class="RightColumn">
+        </td>
+    </table>
+    <script src="Python_Info.js"></script>
+    <script src="prism.js"></script>
+</body>
+</html>

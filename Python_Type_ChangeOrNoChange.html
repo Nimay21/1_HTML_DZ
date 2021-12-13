@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Python_Info.css">
+    <link href="prism.css" rel="stylesheet" />
+    <title>index</title>
+</head>
+<body>
+    <table>
+        <td class="LeftColumn">
+            <div class="LeftContentPanel">
+                <div class="LeftContentPanelHeading"><h3>Содержание</h3></div>
+                <div>
+                    <ul class="list" id="list">
+                        <li> <a class="LeftPanelLink" href="Python_info.html">Описание</a></li>
+                        <li>Типы и модель данных
+                            <ul>
+                                <li> <a class="LeftPanelLink" href="Python_Type_Info.html">Типизация в программировании</a></li>
+                                <li><a class="LeftPanelLink" href="Python_Type.html">Типы данных в Python</a></li>
+                                <li><a class="LeftPanelLink" href="Python_Type_DataModel.html">Модель данных</a></li>
+                                <li><a class="LeftPanelLink" href="Python_Type_ChangeOrNoChange.html">Изменяемые и неизменяемые типы данных</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </td>
+        <td class="MainColumn">
+            <div class="container">
+                <div class="menu">
+                    <div class="menu_top">
+                        <div class="logo">LOGO</div>
+                    </div>
+                    <div class="menu_bottom">
+                        <a href="index.html">Главная</a>
+                        <a href="C++_info.html">C++</a>
+                        <a href="Java_info.html">Java</a>
+                        <a href="Python_info.html">Python</a>
+                        <a href="#footer">Авторы</a></li>
+                    </div>
+                </div>
+                <div class="Main">
+                    <h3><a name="Comparison"></a>Изменяемые и неизменяемые типы данных</h3>
+                    <p>В Python существуют изменяемые и неизменяемые типы.</p>
+                    <br><br>
+                    <p>К неизменяемым (immutable) типам относятся: целые числа (int),  числа с плавающей точкой (float), комплексные числа (complex), логические переменные (bool), кортежи (tuple), строки (str) и неизменяемые множества (frozen set).</p>
+                    <br><br>
+                    <p>К изменяемым (mutable) типам относятся: списки (list), множества (set), словари (dict).</p>
+                    <br><br>
+                    <p>Как уже было сказано ранее, при создании переменной, вначале создается объект, который имеет уникальный идентификатор, тип и значение, после этого переменная может ссылаться на созданный объект.</p>
+                    <br><br>
+                    <p>Неизменяемость типа данных означает, что созданный объект больше не изменяется. Например, если мы объявим переменную k = 15, то будет создан объект со значением 15, типа int и идентификатором, который можно узнать с помощью функции id().</p>
+                    <pre><code class="language-clike">>>> k = 15
+>>> id(k)
+1672501744
+>>> type(k)
+'int'</code></pre>
+                    <p>Объект с id = 1672501744 будет иметь значение 15 и изменить его уже нельзя.</p>
+                    <br><br>
+                    <p>Если тип данных изменяемый, то можно менять значение объекта. Например, создадим список [1, 2], а потом заменим второй элемент на 3.</p>
+                    <pre><code class="language-clike">>>> a = [1, 2]
+>>> id(a)
+47997336
+>>> a[1] = 3
+>>> a
+[1, 3]
+>>> id(a)
+47997336</code></pre>
+                    <br>
+                    <p>Как видно, объект на который ссылается переменная a, был изменен. Это можно проиллюстрировать следующим рисунком.</p>
+                    <br>
+                    <img src="https://devpractice.ru/wp-content/uploads/2016/12/python-lesson3-2-1.png" alt="">
+                    <br><br>
+                    <p>В рассмотренном случае, в качестве данных списка, выступают не объекты, а отношения между объектами. Т.е. в переменной a хранятся ссылки на объекты содержащие числа 1 и 3, а не непосредственно сами эти числа.</p>
+                </div>
+                <div class="footer">
+                    <a name = "footer"></a>
+                    <div class = "authors">
+                        <div class="dima">Гарнага Дима</div>
+                        <div class="arsen">Хубян Арсен</div>
+                        <div class="igor">Данчук Игорь</div>
+                </div>
+            </div>
+        </td>
+        <td class="RightColumn">
+        </td>
+    </table>
+    <script src="Python_Info.js"></script>
+    <script src="prism.js"></script>
+</body>
+</html>

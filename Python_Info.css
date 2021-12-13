@@ -2,14 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    background-color: rgb(102, 95, 80);
+body{background-color: rgb(102, 95, 80);}
+.footer{
+    background-color: rgb(17, 17, 56);
+    margin-top: 40px;
 }
+.Main{ background-color: rgb(102, 95, 80);}
+.dima{text-align: left;}
+.arsen{text-align: center;}
+.igor{text-align: right;}
 
-.container{
-    width: 1200px;
-    
-    margin: auto;
+a
+{
+    color:#DCCCC2;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .menu_top{
@@ -30,6 +37,11 @@ body{
     padding: 10px 0px 10px 0px;
 }
 
+.container{
+    width: 100%;
+    margin: left;
+}
+
 h1{
     text-align: center;
     color: orange;
@@ -37,13 +49,16 @@ h1{
     background-color: rgb(102, 95, 80);
     margin-top: 10px;
 }
-.footer{
-    background-color: rgb(17, 17, 56);
+h2{
+    margin-left: 20px;
+    font-size: 25px;
+    color: #A9B1D1;
 }
-
-.Proga
-{
-    background-color: rgb(102, 95, 80);
+h3{
+    text-align: center;
+    font-size: 25px;
+    color: #FFE5A2;
+    margin-top: 40px;
 }
 p
 {
@@ -51,6 +66,7 @@ p
     font-size: 20px;
     color: #F2EAE7;
 }
+
 .MainTxt{
     width: 70%;
     margin: 30px 0px;
@@ -61,40 +77,13 @@ p
     padding: 5px 20px;
     margin: 20px 0px;
 }
-h2{
-    margin-left: 20px;
-    font-size: 25px;
-    color: #A9B1D1;
-}
-a
-{
-    color:#DCCCC2;
-    text-decoration: none;
-}
-h3{
-    text-align: center;
-    font-size: 25px;
-    color: #FFE5A2;
-}
-img{
-    margin: 20px 0px;
-}
+
+img{margin: 20px 0px;}
+
 .Puncts{
     margin-top: 20px;
     font-size: 25px;
     color: #FFE5A2;
-}
-.Possibilites{
-    margin: 40px 0px;
-}
-.Comparison{
-    margin: 40px 0px;
-}
-.dima{text-align: left;}
-.arsen{text-align: center;}
-.igor{text-align: right;}
-.footer{
-    background-color: rgb(17, 17, 56);
 }
 
 .authors{
@@ -103,4 +92,50 @@ img{
     margin: auto;
     font-size: 20px;
     color: white;
+}
+
+.LeftContentPanel{
+    width: 90%;
+    margin: 20px 10px;
+    background-color: #BBB5AA;
+}
+
+.LeftContentPanelHeading{
+    background-color: #9F8C64;
+}
+
+.LeftColumn{
+    position: fixed;
+    width: 20%;
+}
+
+.RightColumn{
+    width: 20%;
+}
+
+.MainColumn{
+    width: 60%;
+}
+
+ul li {
+    color: #414141;
+    font-weight: bold;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.hide::after {
+    cursor: pointer;
+    content: "+";
+}
+
+.show::after {
+    cursor: pointer;
+    content: "-";
+}
+
+.LeftPanelLink{
+    color: #414141;
+    text-decoration: none;
 }
